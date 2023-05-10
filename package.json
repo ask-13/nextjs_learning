@@ -1,0 +1,22 @@
+{
+  "name": "nextjs_test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "json-server": "json-server --watch db.json --port 5000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "serve": "concurrently \"npm run dev\" \"npm run json-server\"",
+    "build-api": "concurrently \"npm run build\" \"npm run json-server\""
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "json-server": "^0.17.3",
+    "next": "13.3.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0"
+  }
+}
